@@ -16,88 +16,20 @@ namespace A3ExampleCode
             set { ballName = value; }
         }
 
-        private int ballHealth;
+        private int radius;
 
-        public int BallHealth
+        public int Radius
         {
-            get { return ballHealth; }
-            set { ballHealth = value; }
+            get { return radius; }
+            set { radius = value; }
         }
 
-        private string ballAttackOneName;
-        private int ballAttackOneDamage;
+        private int circumference;
 
-        public string BallAttackOneName
+        public int Circumference
         {
-            get { return ballAttackOneName; }
-            set { ballAttackOneName = value; }
-        }
-        public int BallAttackOneDamage
-        {
-            get { return ballAttackOneDamage; }
-            set { ballAttackOneDamage = value; }
-        }
-
-        private string ballAttackTwoName;
-        private int ballAttackTwoDamage;
-
-        public string BallAttackTwoName
-        {
-            get { return ballAttackTwoName; }
-            set { ballAttackTwoName = value; }
-        }
-        public int BallAttackTwoDamage
-        {
-            get { return ballAttackTwoDamage; }
-            set { ballAttackTwoDamage = value; }
-        }
-
-        private string ballAttackThreeName;
-        private int ballAttackThreeDamage;
-
-        public string BallAttackThreeName
-        {
-            get { return ballAttackThreeName; }
-            set { ballAttackThreeName = value; }
-        }
-        public int BallAttackThreeDamage
-        {
-            get { return ballAttackThreeDamage; }
-            set { ballAttackThreeDamage = value; }
-        }
-
-        public string takeDamage(int amountDamage)
-        {
-            BallHealth -= amountDamage;
-
-            if (BallHealth < 0)
-            {
-                return ballName + " has " + BallHealth + " Health left";
-            }
-            else
-            {
-                return ballName + " is dead";
-            }
-        }
-
-        public int getAttackParameters(string attackName)
-        {
-            if (attackName == ballAttackOneName)
-            {
-                return BallAttackOneDamage;
-            }
-            if (attackName == ballAttackTwoName)
-            {
-                return BallAttackTwoDamage;
-            }
-            if (attackName == ballAttackThreeName)
-            {
-                return BallAttackThreeDamage;
-            }
-            else
-            {
-                return 0;
-            }
+            get { return circumference; }
+            set { circumference = value; }
         }
     }
 }
